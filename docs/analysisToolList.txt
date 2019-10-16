@@ -1,0 +1,21 @@
+This is a prioritized list of code analysis tools to be integrated into a BlueJ plugin. 
+Prioritizing is done form the perspective of an educator. 
+
+1)	SpotBugs:  
+	* Usable as a learning tool that gives direct feedback for bad coding practices.
+	* Assists in 
+
+2)	PMD:  
+	* intercepts bad coding practices
+	*
+
+3)	CPD:  
+	* if you can implement PMD, you can implement CPD
+	* breaks bad duplication practices that can cause maintenance issues later
+
+4)	Checkstyle:  
+	* customizable to instructor’s coding convention
+
+5)	JaCoCo:  
+	* Don’t know if it plugs into BlueJ’s testing framework
+	* Students may not know JUnit
