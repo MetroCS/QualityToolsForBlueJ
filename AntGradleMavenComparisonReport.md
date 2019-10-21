@@ -1,22 +1,28 @@
 
-# Ant, Gradle and Maven Comparison Report
+# Ivy, Ant, Gradle and Maven Comparison Report
 
 **Story:** Compare Common-Use Automated Build Tools Suitable for the Project [#17](https://github.com/MetroCS/QualityToolsForBlueJ/issues/17)
 
 **Description:** The intent of this document is to clearly show the use cases or specific advantages of each build tool to deduce which would be most suitable to the QualityToolsForBlueJ Java project.
 
-We decided to compare three of the most common Java build tools, Ant, Gradel, and Maven with Java developers opinions on why or why not they use the build tool they use, in order to more easily come to a conclusion by showing real world user experience on top of what each tool is capable of on paper.
+We decided to compare four of the most common Java build tools Ivy, Ant, Gradel, and Maven with Java developers opinions on why or why not they use the build tool they use, in order to more easily come to a conclusion by showing real world user experience on top of what each tool is capable of on paper.
 
-## Ant with Ivy 
+## Ivy 
 * **Unique Features**
+    * Dependancy manager focussed on configurability and simplicity. 
+    * Ivy is not commonly used by itself because many larger build tools provide additional usefull functionality that contribute greatly to a project. Ivy would be best suited for small irregular projects.
+* **Reviews** [Source](https://www.g2.com/products/apache-ivy/reviews#survey-response-2015176)
+    * "Ivy makes organizing dependencies easy and efficient" as one user reviewed, however many agree its biggest con are that it's already integrated with other tools.
+
+## Ant 
+* **Unique Features**
+    * Easily integrated with Ivy, which overcomes one of its major drawbacks: dependancy manegement.
     * Ant has its own testing framework, AntUnit, but also integrates very well with almost any other testing tools like JUnit, Selenium etc.
     * Ant can also be used effectively to build non Java applications, for instance C or C++ applications.
     * Ant has the most customizable build configurations.
 * **Reviews** [Source](https://www.g2.com/products/apache-ant/reviews)
     * Overall the build process is easy and extremely customizable which is the major pro that most often outweighs the cons of having maybe some outdated features that newer tools may have and that everyone's build will be different leading larger investment in time and effort to learn, according to multiple reviewers opinions.
-
     * As one reviewer says "Ant gives you a lot of freedom and control over your builds, it also means that you will have to constantly reinvent the wheel on how your project structure and how everything fits together for every new project."says Raiu. This makes it more difficult for others to pick up your project because it is different than most every other project.
-
 ## Gradle
 * **Unique Features** 
 [Source](https://gradle.org/features/)
