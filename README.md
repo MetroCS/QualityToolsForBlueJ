@@ -2,6 +2,13 @@
 
 Goal: BlueJ extension that integrates quality assessment tools
 
+### [License](LICENSE)
+
+### [Vision & Stakeholders](Vision.md)
+#### [Previous Project Info](RequirementsSourceInfo.md)
+
+### [Coding Convention](ConventionGuide.md)
+
 List of tools
 --------------------
 Checkstyle: A code analysis tool to help programmers catch style mistakes and help them adhere to specified Java standards.
@@ -21,10 +28,3 @@ Additional Useful Links
 -----------------------
 
 https://www.bluej.org/extensions/writingextensions.html		#Directions on writing BlueJ extension
-
-### [License](LICENSE)
-
-### [Vision & Stakeholders](Vision.md)
-#### [Previous Project Info](RequirementsSourceInfo.md)
-
-### [Coding Convention](ConventionGuide.md)
