@@ -2,10 +2,41 @@
 
 This document describes intended and preferred conventions
 for development and maintenance of the _Quality Tools for BlueJ_ software product.
-* [Agile Principles](/ConventionGuide.md#Agile-Principles)
-* [Coding Convention Guide](/ConventionGuide.md#Coding-Convention-Guide)
-* [Build Environment](/ConventionGuide.md#Build-Environment)
+* [Gradle File Hierarchy](#Gradle-File-Hierarchy)
+* [Agile Principles](#Agile-Principles)
+* [Coding Convention Guide](#Coding-Convention-Guide)
+* [Build Environment](#Build-Environment)
 
+_____ 
+## Gradle File Hierarchy 
+
+### General structure for file hierarchy in gradle build environment.
+### Doc Link: https://docs.gradle.org/current/userguide/organizing_gradle_projects.html
+
+        QualityToolsForBlueJ
+        ├── build.gradle
+        │
+        ├── gradle
+        │   └── integration-test.gradle
+        │
+        ├── gradlew*    (Use gradlew to ensure project version of gradle is declared.)
+        │
+        ├── settings.gradle
+        │
+        └── src         (Source code for compilation goes in main or test.)
+            │
+            ├── main 
+            │   │
+            │   └── java    (Place Java class files here for compilation.)
+            │       │
+            │       └── HelloWorld.java
+            │
+            └── test
+                │
+                └── java    (Place Java test class files here for compilation.)  
+                    │
+                    └── HelloWorldTest.java
+            
 _____ 
 ## Agile Principles
 
