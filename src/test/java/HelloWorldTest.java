@@ -1,10 +1,12 @@
-import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+import static org.junit.Assert.*;
  
 public class HelloWorldTest {
+  @Test
+  public void HelloTest() {
+      HelloWorld h = new HelloWorld();
+      String str = "World";
  
-	@Test
-	public void testingHelloWorld() {
-		assertEquals("Here is test for Hello World String: ", "Hello World", HelloWorld());
-	}
+      assertEquals(str, h.Hello(str));
+  }
 }
