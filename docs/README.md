@@ -8,6 +8,8 @@ Development and maintenance of a single BlueJ extension that
 - provides a cohesive user experience for interacting with those tools within BlueJ;
 - facilitates maintenance of the functionality of the extension with future version of the tools, BlueJ, and Java; and
 - provides a smooth path for the addition of new quality assessment tools.
-Project "Home" page URL: https://metrocs.github.io/QualityToolsForBlueJ/
+
+
+Official Project Repository: https://metrocs.github.io/QualityToolsForBlueJ/
 
 
