@@ -7,4 +7,8 @@ Goal: BlueJ extension that integrates quality assessment tools
 ### [Vision & Stakeholders](Vision.md)
 #### [Previous Project Info](RequirementsSourceInfo.md)
 
-### [Coding Convention](ConventionGuide.md)
+### [Development Conventions](DevelopmentConventions.md)
+
+___
+
+__Project website:__ https://metrocs.github.io/QualityToolsForBlueJ/
