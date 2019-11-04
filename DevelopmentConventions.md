@@ -13,7 +13,7 @@ _____
 ### General structure for file hierarchy in gradle build environment.
 ### Doc Link: https://docs.gradle.org/current/userguide/organizing_gradle_projects.html
 
-        QualityToolsForBlueJQuality
+        QualityToolsForBlueJ
         ├── build.gradle
         │
         ├── gradle
