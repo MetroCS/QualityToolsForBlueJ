@@ -101,37 +101,37 @@ _____
 The following tools are established as comprising and contributing to the build environment for the QT4BJ project.
 
 ### Build Automation
-#### Gradle
-TODO: add overview and external links
+#### [Gradle](https://www.gradle.org/)
+Compromise between configuration and convention, uses a Groovy-based DSL instead of XML.
 
 ### Unit Testing Framework
-#### Junit 5
-TODO: add overview and external links
+#### [JUnit5](https://junit.org/junit5/)
+Framework for testing Java 8+. Supports multiple testing styles.
 
 ### Test Coverage Assessment
-#### JaCoCo
-TODO: add overview and external links
+#### [JaCoCo](https://www.eclemma.org/jacoco/)
+Java code coverage library that can also analyze code complexity
 
 ### Design Complexity Assessment
-#### JaCoCo
-TODO: add overview and external links
+#### [JaCoCo](https://www.eclemma.org/jacoco/)
+Java code coverage library that can also analyze code complexity
  
  
 ### Source Code Shortcoming Identification
-#### Checkstyle
-TODO: add overview and external links
+#### [CheckStyle](https://checkstyle.sourceforge.io/)
+Examines source code and looks for violation of coding conventions.
 
-#### PMD
-TODO: add overview and external links
+#### [PMD](https://pmd.github.io/)
+Finds programming flaws, such as unused variables and empty methods.
 
-#### SpotBugs
-TODO: add overview and external links
 
+#### [Spotbugs](https://spotbugs.github.io/)
+Static analysis to look for bugs in Java code; a successor to FindBugs
 _____
 _The following tools are under consideration for inclusion in the QT4BJ build environment._
-#### Travis CI
-TODO: add overview and external links
-#### OpenClover
-TODO: add overview and external links
-#### AccessLint
-TODO: add overview and external links
+#### [Travis CI](https://travis-ci.com/)
+Provides continuous integration code coverage analysis
+#### [OpenClover](http://openclover.org/features)
+Provides robust code coverage analysis
+#### [AccessLint](https://www.accesslint.com/)
+Brings automated web accessibility testing into your development workflow
