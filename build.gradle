@@ -9,6 +9,7 @@
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
+    id 'jacoco'
 }
 
 repositories {
@@ -25,6 +26,8 @@ test {
         // excludeEngines 'junit-jupiter'
     }
 }
+// Runs jaCoCoTestReport after test is run
+test.finalizedBy jacocoTestReport
 
 dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
@@ -39,3 +42,17 @@ dependencies {
     // These dependancies are for backwards compatibility with JUnit3/4
     testCompileOnly 'junit:junit:4.12'
     testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.1.0'}
+// Configures JaCoCo version and where reports are stored
+jacoco {
+    toolVersion = "0.8.5"
+    reportsDir = file("${buildDir}/reports/jacoco")
+}
+
+jacocoTestReport {
+    // Generates html report in build directory
+    reports {
+        xml.enabled false
+        csv.enabled false
+        html.destination file("${buildDir}/reports/jacoco")
+    }
+}
