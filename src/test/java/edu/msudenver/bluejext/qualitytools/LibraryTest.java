@@ -14,9 +14,8 @@ public class LibraryTest {
         Library classUnderTest = new Library();
         assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
     }
-
-    public static boolean checkdirectoryExists(String path){
-        // test "/var/tmp" directory
+    // Method to check if a directory exists
+    public static boolean checkDirectoryExists(String path){
         File tmpDir = new File( path );
         boolean exists = tmpDir.exists();
         if (exists){
@@ -24,5 +23,17 @@ public class LibraryTest {
         }
         return(false);
     }
+    // Test to see if BlueJextensionsClass directory exists
+    @Test public void testExtensionsDirectoryExists() {
+        String path = System.getProperty("user.dir") + "/gradle/BlueJextensionClass" ;
+        assertTrue( checkDirectoryExists( path ) );
+    }
+
+
+    
+
+
+
+
 
     }
