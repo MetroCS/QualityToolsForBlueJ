@@ -41,12 +41,14 @@ dependencies {
     testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.1.0'
 
     // This dependency comes from BlueJ installation and contains the Extentions class
-    implementation files('gradle/BlueJextensionClass/bluejext.jar')
+    compile files('libs/bluejext.jar')
 }
+
 
 jar {
 
     manifest {
         attributes 'Main-Class': 'simpleExtTest.SimpleExtension'
+        //attributes 'Main-Class': 'libs.SimpleExtension'
          }
 }
