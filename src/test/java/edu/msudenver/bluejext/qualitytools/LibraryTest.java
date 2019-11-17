@@ -23,17 +23,24 @@ public class LibraryTest {
         }
         return(false);
     }
+
     // Test to see if BlueJextensionsClass directory exists
     @Test public void testExtensionsDirectoryExists() {
         String path = System.getProperty("user.dir") + "/gradle/BlueJextensionClass" ;
         assertTrue( checkDirectoryExists( path ) );
     }
 
-
-    
-
-
-
-
-
+    public static boolean checkFileExists(String path){
+        File file = new File( path );
+        boolean exists = file.exists();
+        if (file.exists() && file.isFile()){
+            return(true);
+        }
+        return(false);
     }
+
+
+
+
+
+}
