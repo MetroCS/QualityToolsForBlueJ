@@ -40,5 +40,6 @@ dependencies {
     testCompileOnly 'junit:junit:4.12'
     testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.1.0'
 
-    compile files('gradle/BlueJextensionClass/bluejext.jar')
+    // This dependency comes from BlueJ installation and contains the Extentions class
+    implementation files('gradle/BlueJextensionClass/bluejext.jar')
 }
