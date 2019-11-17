@@ -38,4 +38,17 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.1.0'
     // These dependancies are for backwards compatibility with JUnit3/4
     testCompileOnly 'junit:junit:4.12'
-    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.1.0'}
+    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.1.0'
+
+    // This dependency comes from BlueJ installation and contains the Extentions class
+    compile files('libs/bluejext.jar')
+}
+
+
+jar {
+
+    manifest {
+        attributes 'Main-Class': 'simpleExtTest.SimpleExtension'
+    }
+}
+
