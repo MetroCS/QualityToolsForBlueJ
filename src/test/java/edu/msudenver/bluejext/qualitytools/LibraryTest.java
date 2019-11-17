@@ -30,6 +30,7 @@ public class LibraryTest {
         assertTrue( checkDirectoryExists( path ) );
     }
 
+    // Method checks to see if a file exists
     public static boolean checkFileExists(String path){
         File file = new File( path );
         boolean exists = file.exists();
@@ -39,8 +40,10 @@ public class LibraryTest {
         return(false);
     }
 
-
-
-
+    // Test to see if bluejext.jar file exists inside the BlueJextensionClass directory
+    @Test public void testBluejextJarFileExists() {
+        String path = System.getProperty("user.dir") + "/gradle/BlueJextensionClass/bluejext.jar" ;
+        assertTrue( checkDirectoryExists( path ) );
+    }
 
 }
