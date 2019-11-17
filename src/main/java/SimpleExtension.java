@@ -1,6 +1,5 @@
 // Derek Holsapple, I stole this simple class from https://www.bluej.org/extensions/writingextensions.html
         // to test a application into BlueJ
-package edu.msudenver.bluejext.qualitytools;
 
 import bluej.extensions.*;
 import bluej.extensions.event.*;
