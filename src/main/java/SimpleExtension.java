@@ -1,6 +1,3 @@
-// Derek Holsapple, I stole this simple class from https://www.bluej.org/extensions/writingextensions.html
-        // to test a application into BlueJ
-
 import bluej.extensions.*;
 import bluej.extensions.event.*;
 import java.net.URL;
@@ -8,9 +5,8 @@ import java.net.URL;
 /*
  * This is the starting point of a BlueJ Extension
  */
-
-public class SimpleExtension extends Extension implements PackageListener{
-
+public class SimpleExtension extends Extension implements PackageListener
+{
     /*
      * When this method is called, the extension may start its work.
      */
@@ -98,13 +94,4 @@ public class SimpleExtension extends Extension implements PackageListener{
             return null;
         }
     }
-
-
-
-
-
-
-
-
-
 }

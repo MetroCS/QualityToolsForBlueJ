@@ -43,3 +43,10 @@ dependencies {
     // This dependency comes from BlueJ installation and contains the Extentions class
     implementation files('gradle/BlueJextensionClass/bluejext.jar')
 }
+
+jar {
+
+    manifest {
+        attributes 'Main-Class': 'simpleExtTest.SimpleExtension'
+         }
+}
