@@ -52,7 +52,7 @@ dependencies {
 jar {
 
     manifest {
-        attributes 'Main-Class': 'simpleExtTest.SimpleExtension'
+        attributes 'Main-Class': 'SimpleExtension'
     }
 }
 

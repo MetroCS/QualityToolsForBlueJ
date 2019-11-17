@@ -17,15 +17,15 @@ public class LibraryTest {
 
 
     // Test to see if BlueJextensionsClass directory exists
-    @Test public void testExtensionsDirectoryExists() {
-        String path = System.getProperty("user.dir") + "/gradle/BlueJextensionClass" ;
+    @Test public void testLibDirectoryExists() {
+        String path = System.getProperty("user.dir") + "/libs" ;
         assertTrue( Library.checkDirectoryExists( path ) );
     }
 
 
     // Test to see if bluejext.jar file exists inside the BlueJextensionClass directory
     @Test public void testBluejextJarFileExists() {
-        String path = System.getProperty("user.dir") + "/gradle/BlueJextensionClass/bluejext.jar" ;
+        String path = System.getProperty("user.dir") + "/libs/bluejext.jar" ;
         assertTrue( Library.checkDirectoryExists( path ) );
     }
 
