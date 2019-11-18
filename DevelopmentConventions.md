@@ -2,41 +2,11 @@
 
 This document describes intended and preferred conventions
 for development and maintenance of the _Quality Tools for BlueJ_ software product.
-* [Gradle File Hierarchy](#Gradle-File-Hierarchy)
 * [Agile Principles](#Agile-Principles)
 * [Coding Convention Guide](#Coding-Convention-Guide)
 * [Build Environment](#Build-Environment)
+* [Repository Structure](#Repository-Structure)
 
-_____ 
-## Gradle File Hierarchy 
-
-### General structure for file hierarchy in gradle build environment.
-### Doc Link: https://docs.gradle.org/current/userguide/organizing_gradle_projects.html
-
-        QualityToolsForBlueJ
-        ├── build.gradle
-        │
-        ├── gradle
-        │   └── integration-test.gradle
-        │
-        ├── gradlew*    (Use gradlew to ensure project version of gradle is declared.)
-        │
-        ├── settings.gradle
-        │
-        └── src         (Source code for compilation goes in main or test.)
-            │
-            ├── main 
-            │   │
-            │   └── java    (Place Java class files here for compilation.)
-            │       │
-            │       └── HelloWorld.java
-            │
-            └── test
-                │
-                └── java    (Place Java test class files here for compilation.)  
-                    │
-                    └── HelloWorldTest.java
-            
 _____ 
 ## Agile Principles
 
@@ -101,37 +71,121 @@ _____
 The following tools are established as comprising and contributing to the build environment for the QT4BJ project.
 
 ### Build Automation
-#### Gradle
-TODO: add overview and external links
+#### [Gradle](https://www.gradle.org/)
+Compromise between configuration and convention, uses a Groovy-based DSL instead of XML.
 
 ### Unit Testing Framework
-#### Junit 5
-TODO: add overview and external links
+#### [JUnit5](https://junit.org/junit5/)
+Framework for testing Java 8+. Supports multiple testing styles.
 
 ### Test Coverage Assessment
-#### JaCoCo
-TODO: add overview and external links
+#### [JaCoCo](https://www.eclemma.org/jacoco/)
+Java code coverage library that can also analyze code complexity
 
 ### Design Complexity Assessment
-#### JaCoCo
-TODO: add overview and external links
- 
+#### [JaCoCo](https://www.eclemma.org/jacoco/)
+Java test coverage and code complexity analyzer
  
 ### Source Code Shortcoming Identification
-#### Checkstyle
-TODO: add overview and external links
+#### [CheckStyle](https://checkstyle.sourceforge.io/)
+Identifies violation of coding conventions
 
-#### PMD
-TODO: add overview and external links
+#### [PMD](https://pmd.github.io/)
+Identifies common programming weaknesses 
 
-#### SpotBugs
-TODO: add overview and external links
-
+#### [Spotbugs](https://spotbugs.github.io/)
+Identifies bugs and potentially buggy code in Java code; a successor to FindBugs
 _____
 _The following tools are under consideration for inclusion in the QT4BJ build environment._
-#### Travis CI
-TODO: add overview and external links
-#### OpenClover
-TODO: add overview and external links
-#### AccessLint
-TODO: add overview and external links
+#### [Travis CI](https://travis-ci.com/)
+Continuous integration
+#### [OpenClover](http://openclover.org/features)
+Code coverage analysis
+#### [AccessLint](https://www.accesslint.com/)
+Automated web accessibility testing
+
+_____ 
+## Repository Structure 
+
+```
+.
+├── .github/ISSUE_TEMPLATE/  	# Templates for new issues (e.g., user stories, bug reports)
+├── archive/                    # Historical artifacts
+├── docs/                    	# GitHub Pages website content
+├── gradle/        		# See Gradle documentation
+├── src/                     	# Source files
+├── .gitignore                  # Directories and file types to be ignored by git
+├── DevelopmentConventions.md	# Development and maintenance conventions
+├── LICENSE                     # Open source license file
+├── README.md
+├── RequirementsSourceInfo.md	# Goals of previous, related project
+├── Vision.md                   # Vision statement and stakeholder identification
+├── build.gradle                # See Gradle documentation
+├── gradlew                     # See Gradle documentation
+├── gradlew.bat                 # See Gradle documentation
+├── settings.gradle	        # See Gradle documentation
+└── toolsForIntegration.md      # List of code analysis tools to be implemented and descriptions
+```
+```
+Github Issue Templates
+
+.
+├── ...
+├── .github
+│   ├──ISSUE_TEMPLATE  		
+│      ├── bug_report.md       # Bug report template
+│      ├── user-story.md       # User story template
+│   └── ...                    # etc.
+└── ...
+```
+```
+Archive
+
+.
+├── ...
+├── archive                         # Historical artifacts
+│   ├── decisionNotes               # Documentation that informed project decision-making
+|      ├── AntGradleComparison.md   # Comparison report of Ant and Gradle build tools
+│      ├── IvyAntGradleMavenComparisonReport.md     	 
+|                                   # Comparison report of Ant, Ivy, Gradle and Maven build tools
+│   └──
+└── ...
+```
+```
+GitHub Pages Website
+
+.
+├── ...
+├── docs                    # GitHub Pages website content	
+│   ├── README.md           # Project overview
+│   ├── _config.yml         # Jekyll configuration
+│   └── ...                 # etc.
+└── ...
+```
+```
+Gradle Wrapper
+
+├── ...
+├── gradle 			# See Gradle documentation
+│   ├── wrapper                      # Gradle Wrapper
+│      ├── gradle-wrapper.jar        # Gradle packages and distributions
+│      ├── gradle-wrapper.properties # Gradle Wrapper configuration
+│   └──
+└── ...
+```
+```
+Source
+
+├── ...
+├── src 			# Project source code files
+│   ├── main    		# Project implementation source code
+│	   ├── java 
+|          ├── edu/msudenver/bluejext/qualitytools/
+│   └──
+│   ├── test 			# Project testing source code
+│	   ├── java
+|          ├── edu/msudenver/bluejext/qualitytools/
+│   └──
+└── ...
+```
+Gradle structure based on [Organizing Gradle Projects](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html)

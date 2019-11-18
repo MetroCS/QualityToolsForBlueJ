@@ -9,6 +9,7 @@
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
+    id 'jacoco'
 }
 
 repositories {
@@ -17,6 +18,17 @@ repositories {
     jcenter()
 }
 
+test {
+    // Uncomment a specific test engine below to use specifically otherwise
+    // By default all engines on the test runtime classpath will be used.
+    useJUnitPlatform {
+        // includeEngines 'junit-vintage'
+        // excludeEngines 'junit-jupiter'
+    }
+}
+// Runs jaCoCoTestReport after test is run
+test.finalizedBy jacocoTestReport
+
 dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
     api 'org.apache.commons:commons-math3:3.6.1'
@@ -24,6 +36,23 @@ dependencies {
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation 'com.google.guava:guava:28.0-jre'
 
-    // Use JUnit test framework
-    testImplementation 'junit:junit:4.12'
+    // JUnit 5 = JUnit Platform + JUnit Jupiter + JUnit Vintage
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.1.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.1.0'
+    // These dependancies are for backwards compatibility with JUnit3/4
+    testCompileOnly 'junit:junit:4.12'
+    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.1.0'}
+// Configures JaCoCo version and where reports are stored
+jacoco {
+    toolVersion = "0.8.5"
+    reportsDir = file("${buildDir}/reports/jacoco")
+}
+
+jacocoTestReport {
+    // Generates html report in build directory
+    reports {
+        xml.enabled false
+        csv.enabled false
+        html.destination file("${buildDir}/reports/jacoco")
+    }
 }
