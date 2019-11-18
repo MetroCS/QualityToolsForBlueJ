@@ -10,6 +10,7 @@ plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
     id 'jacoco'
+    id "com.github.spotbugs" version "2.0.1"
 }
 
 repositories {
@@ -26,6 +27,7 @@ test {
         // excludeEngines 'junit-jupiter'
     }
 }
+
 // Runs jaCoCoTestReport after test is run
 test.finalizedBy jacocoTestReport
 
@@ -41,7 +43,9 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.1.0'
     // These dependancies are for backwards compatibility with JUnit3/4
     testCompileOnly 'junit:junit:4.12'
-    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.1.0'}
+    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.1.0'
+}
+
 // Configures JaCoCo version and where reports are stored
 jacoco {
     toolVersion = "0.8.5"
