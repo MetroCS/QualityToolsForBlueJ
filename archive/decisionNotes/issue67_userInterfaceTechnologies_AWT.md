@@ -9,7 +9,7 @@ Abstract Window Toolkit (AWT) is a well known Java framework for creating graphi
 * well documented and tested
 * familiar to many students/maintainers
 * relatively easy to learn
-* implemented using the Java language, which is the language used in this project
+* implemented using the Java language (which is the language used in this project)
 
 AWT is a part of Oracle's Java Foundation Classes, which makes it a trusted choice for creating graphical user interfaces. Because it's backed by Oracle, there is adequate documentation for maintainers to reference.
 
