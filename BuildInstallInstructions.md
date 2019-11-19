@@ -1,5 +1,12 @@
 # How to build and install the QT4BJ extension
 
+These instructions address building and installing the QT4BJ extension under the following assumptions:
+- The main class for the extension is named **edu.msudenver.bluejext.qualitytools.QualityToolsExtension**
+- QualityToolsExtension.java includes a Preferences class
+- The class files resulting from compilation of QualityToolsExtension.java are located in
+build/main/java/edu/msudenver/bluejext/qualitytools
+- The `jar` command is issued from the root directory of the repository
+
 ## Building the Extension
 - Compile the extension source code.  Note that `bluejext.jar` must appear in the compilation classpath.
 
