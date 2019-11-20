@@ -177,14 +177,14 @@ Gradle Wrapper
 Source
 
 ├── ...
-├── src 			# Project source code files
-│   ├── main    		# Project implementation source code
-│	   ├── java 
-|          ├── edu/msudenver/bluejext/qualitytools/
+├── src 			# Project source code
+│   ├── main    		# Implementation source code
+│      ├── java
+│         ├── edu/msudenver/bluejext/qualitytools/  # QT4BJ implementation
 │   └──
-│   ├── test 			# Project testing source code
-│	   ├── java
-|          ├── edu/msudenver/bluejext/qualitytools/
+│   ├── test 			# Testing source code
+│      ├── java
+│         ├── edu/msudenver/bluejext/qualitytools/  # QT4BJ tests
 │   └──
 └── ...
 ```
