@@ -12,6 +12,11 @@ plugins {
     id 'jacoco'
 }
 
+compileJava {
+    // Establish compatibility with JDK used to build BlueJ
+    options.compilerArgs.addAll(['--release', '11'])
+}
+
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
