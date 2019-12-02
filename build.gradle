@@ -74,3 +74,11 @@ jar {
         configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
     }
 }
+
+task copyJarToBin(type: Copy, dependsOn: build) {
+    println 'Copying Extension to Repository'
+    copy {
+        from 'build/libs/QualityToolsForBlueJ.jar'
+        into '/'
+    }
+}
