@@ -20,9 +20,13 @@ public class QualityToolsExtension extends Extension implements PackageListener 
 
     /**
      * @param bluej instance of BlueJ this extension should register with
+     * Creates a menu for the extension in BlueJ tool bar.
      */
     @Override
-    public void startup(BlueJ bluej) {}
+    public void startup(BlueJ bluej) {
+    	ExtensionMenu menu = new ExtensionMenu();
+    	bluej.setMenuGenerator(menu);
+    }
 
     /**
      * @param ev package event containing BlueJ event information
