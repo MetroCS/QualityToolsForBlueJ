@@ -13,4 +13,4 @@ ___
 Project Repository: [https://github.com/MetroCS/QualityToolsForBlueJ](https://github.com/MetroCS/QualityToolsForBlueJ)
 
 ___
-Download Current Release: [QualityTools.jar](https://github.com/MetroCS/QualityToolsForBlueJ/releases/download/untagged-a50cfc3f19b05c75eaee/QualityTools.jar)
+Download Current Release: [QualityTools.jar](https://github.com/MetroCS/QualityToolsForBlueJ/releases/download/0.1.0/QualityTools.jar)
