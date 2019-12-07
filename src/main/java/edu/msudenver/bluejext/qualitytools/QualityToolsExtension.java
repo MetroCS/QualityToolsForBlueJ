@@ -1,3 +1,4 @@
+/* Quality Tools for BlueJ project.  See: https://metrocs.github.io/QualityToolsForBlueJ */
 package edu.msudenver.bluejext.qualitytools;
 
 import bluej.extensions.*;
@@ -7,17 +8,19 @@ import java.net.URL;
 import javax.swing.*;
 
 /**
- * This is the starting point of the BlueJ Extension
- *
- * @see bluej.extensions.event.PackageListener
- * @see bluej.extensions.Extension
+ * The BlueJ extension product of the
+ * <a href="https://metrocs.github.io/QualityToolsForBlueJ">Quality Tools for BlueJ</a>
+ * project.
+ * @author <a href="https://github.com/MetroCS">MetroCS</a>
+ * @author CS3250 Fall 2019 Students
+ * @version 0.1.0
  */
 public class QualityToolsExtension extends Extension implements PackageListener {
 
     private final String PROJECT_NAME = "Quality Tools";
     private final String PROJECT_DESCRIPTION = "BlueJ extension that integrates quality assessment tools";
     private final String PROJECT_URL = "https://metrocs.github.io/QualityToolsForBlueJ";
-    private final String PROJECT_VERSION = "0.0.01";
+    private final String PROJECT_VERSION = "0.1.0";
 
     /**
      * @param bluej instance of BlueJ this extension should register with
@@ -42,7 +45,8 @@ public class QualityToolsExtension extends Extension implements PackageListener 
     public void packageClosing(PackageEvent ev) {}
 
     /**
-     * @return If this Extension is compatible with the current release of the BlueJ Extensions API
+     * @return true if this Extension is compatible with the current release
+     *           of the BlueJ Extensions API
      */
     @Override
     public boolean isCompatible() {
@@ -67,7 +71,7 @@ public class QualityToolsExtension extends Extension implements PackageListener 
     }
 
     /**
-     * Terminates the extension
+     * Terminates the extension.
      */
     @Override
     public void terminate() {
@@ -83,7 +87,7 @@ public class QualityToolsExtension extends Extension implements PackageListener 
     }
 
     /**
-     * @return A URL where you can find info on this extension.
+     * @return A URL where info on this extension is located.
      */
     @Override
     public URL getURL() {
@@ -99,10 +103,11 @@ public class QualityToolsExtension extends Extension implements PackageListener 
 
 
 /**
- * Register an instance of PreferenceGenerator with the BlueJ proxy object
+ * Implements preference panels for BlueJ extensions.
  *
- * @version 0.1 12 Dec 2019
+ * @version 0.1.0
  *
+ * @author <a href="https://www.bluej.org/extensions/writingextensions.html">BlueJ.org</a>
  * @author Derek Holsapple  
  * @author Eric Armstrong
  * @author Ahmed Samay
