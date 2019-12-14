@@ -1,73 +1,46 @@
-                                          Swing
-Swing is a good user interface technoly for this blue J project.
+# Swing
 
-Definition of Swing: 
+## A brief description of the technology
+Swing is a framework in Java that creates user interfaces. Since it is based on the Java language, it is object oriented. It contains various classes that extend one another, and the notion of extending a base class to add required functionality to that class is key to user interface programming in Java. Another key part of Swing programming is the notion of listeners: classes or components that "listen out for" a particular event happening such as a button being clicked. And listeners are generally implemented as Java interfaces.
 
-Swing is a framework in java that create user interface.Since it is based on java language, it is object oriented. It contains various classes that extend one another, and the notion of extending a base class to add required functionality to that class is key to user interface programming in Java (and indeed in other languages). Another key part of Swing programming is the notion of listeners: classes or components that "listen out for" a particular event happening such as a button being clicked. And listeners are generally implemented as Java interfaces.The class of swing start with letter J. For example, JFrame, JButton, JPanel etc. Let's view thw swing components,
+## Reason(s) why this technology is an appropriate possibility for this project
+* provides a graphical user interface that works on all operating systems
+* it is object oriented
+* it is easy to implement
+* provides a nice interface
 
-1.JFrame:
-a jframe is a top levl window with a title and a border. The size of the frame window contain any area and it can invoke inside the method. Here is the simple class for the jframe:
+[https://docs.oracle.com/javase/8/docs/technotes/guides/swing/](https://docs.oracle.com/javase/8/docs/technotes/guides/swing/)
 
-class MyFrame extends Jframe{
+---
 
-JFrame frame = new JFrame("frame");
+# AWT
 
-}
+## A brief description of the technology
+Abstract Window Toolkit (AWT) is a well known Java framework for creating graphical user interfaces.
 
-Some important method JFrame:<br>
-frame,setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); It will determine what happens after the window close.
-frame.getContentPanel().add(emptyLabel.BorderLaout.CENTER); it helps to add created component into the JFrame.
-frame.pack(): it size the frame.<br>
-frame.setVisible(true): it allows the frame appears on the screen.<br>
-Frame.setLocation(int dimentions, int dimention): it sets the location of the frame on the screen.
+## Reason(s) why this technology is an appropriate possibility for this project
+* well documented and tested
+* familiar to many students/maintainers
+* relatively easy to learn
+* implemented using the Java language (which is the language used in this project)
 
-2.JLabel:<br>
-It makes to apear single line of words on the Jframe.<br>
-Given below is the objective way of creatin new JLable<br>
-JLable lable = new JLable();<br>
+AWT is a part of Oracle's Java Foundation Classes, which makes it a trusted choice for creating graphical user interfaces. Because it's backed by Oracle, there is adequate documentation for maintainers to reference.
 
-Some important methods are:<br>
-a)String getText();<br>
-b)void setText(String text);<br>
-c)void setHorizontalAlignment(int alignment);<br>
-d)Icon getIcon();<br>
-e)int getHorizontalAlignment();<br>
+[https://docs.oracle.com/javase/8/docs/technotes/guides/awt/](https://docs.oracle.com/javase/8/docs/technotes/guides/awt/)
 
-3.JTextField:<br>
-JTextField helps to get text from the user. Here is the simple way of writing code<br>
+---
 
-public class JTextField extends JTextComponent{
-}
+# JavaFX
 
-<br>
-Here are the import methods of JTextField class:<br>
-a)void addActionListener(ActionListerner);<br>
-b)Action getAction();<br>
-c)Void setFont(Font f)<br>
-d)void removeActionListener(ActionListener I);<br>
+## A brief description of the technology
+JavaFX is an open source platform for creating graphical user interfaces.
 
+## Reason(s) why this technology is an appropriate possibility for this project
+* the APIs are designed to be a friendly alternative to Java Virtual Machine (Java VM) languages, such as JRuby and Scala.
+* JavaFX offers WebView, a web component that uses WebKitHTML technology to make it possible to embed web pages within a JavaFX application. JavaScript running in WebView can call Java APIs, and Java APIs can call JavaScript running in WebView.
+* existing Swing applications can be updated with new JavaFX features, such as rich graphics media playback and embedded Web content.
+* JavaFX provides all the major UI controls required to develop a full-featured application. Components can be skinned with standard Web technologies such as CSS.
 
-4.JBotton:<br>
-public class JButton extends AbstractButton<br>
-JBotton use to click and to do whatever it assigned.<br>
-Some important methods are:<br>
-a)void setText(String s);<br>
-b) String getText();<br>
-c)void setEnabled(boolean b);<br>
-d)void setIcon(Icon b)<br>
-e)Icon getIcon();<br>
-d)void setMnemonic(int a);<br>
-e)void addActionListener(ActionListener a);<br>
+With JavaFX, you can build many types of applications. Typically, they are network-aware applications that are deployed across multiple platforms and display information in a high-performance modern user interface that features audio, video, graphics, and animation.
 
-5.JRadioButton<br>
-JRadioButton is usefull where there is a need os many button at once.<br>
-a)getAccessibleContext();<br>
-b)String getUICassID()<br>
-c)protected String paramString()<br>
-d)void updateUI();<br>
-
-other componets are:<br>
-JEditorPane,JDaiLog,JDesktopPane, JTree, JProgressBar, JTogglebButton, JToolBar,JMenuBar, JComboBox,JCheckBox<br>
-
-Reasons to use swing in quality tool to Bluej:<br>
-It provides the graphical interface that work for all operating system. Since it is a object oriented, it is easy to implement. Listners does that extention has to do as long as it is clicked. It also has the method that close the window as long as it is clicked. Overall swing provides nice interface that interact with user.
+[Oracle: What is JavaFX?](https://docs.oracle.com/javafx/2/overview/jfxpub-overview.htm)
