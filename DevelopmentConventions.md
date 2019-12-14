@@ -68,26 +68,26 @@ If a topic is not covered by any guides, use best judgement and consider opening
 _____
 ## Build Environment
 
-The following tools are established as comprising and contributing to the build environment for the QT4BJ project.
+The following tools are established as comprising and contributing to the build environment for the QT4BJ project. (✔ indicates already integrated into the build environment.)
 
 ### Build Automation
-#### [Gradle](https://www.gradle.org/)
+#### ✔ [Gradle](https://www.gradle.org/)
 Compromise between configuration and convention, uses a Groovy-based DSL instead of XML.
 
 ### Unit Testing Framework
-#### [JUnit5](https://junit.org/junit5/)
+#### ✔ [JUnit5](https://junit.org/junit5/)
 Framework for testing Java 8+. Supports multiple testing styles.
 
 ### Test Coverage Assessment
-#### [JaCoCo](https://www.eclemma.org/jacoco/)
+#### ✔ [JaCoCo](https://www.eclemma.org/jacoco/)
 Java code coverage library that can also analyze code complexity
 
 ### Design Complexity Assessment
-#### [JaCoCo](https://www.eclemma.org/jacoco/)
+#### ✔ [JaCoCo](https://www.eclemma.org/jacoco/)
 Java test coverage and code complexity analyzer
  
 ### Source Code Shortcoming Identification
-#### [CheckStyle](https://checkstyle.sourceforge.io/)
+#### ✔ [CheckStyle](https://checkstyle.sourceforge.io/)
 Identifies violation of coding conventions
 
 #### [PMD](https://pmd.github.io/)
@@ -111,6 +111,7 @@ _____
 .
 ├── .github/ISSUE_TEMPLATE/  	# Templates for new issues (e.g., user stories, bug reports)
 ├── archive/                    # Historical artifacts
+├── config/                    	# Build configuration
 ├── docs/                    	# GitHub Pages website content
 ├── gradle/        		# See Gradle documentation
 ├── src/                     	# Source files
@@ -148,6 +149,18 @@ Archive
 |      ├── AntGradleComparison.md   # Comparison report of Ant and Gradle build tools
 │      ├── IvyAntGradleMavenComparisonReport.md     	 
 |                                   # Comparison report of Ant, Ivy, Gradle and Maven build tools
+│   └──
+└── ...
+```
+```
+Build Configuration
+
+.
+├── ...
+├── config                         # Build configuration
+│   ├── checkstyle                 # Configuration files for Checkstyle tasks
+|      ├── checkstyle.xml          # Checkstyle configuration and specification
+│      ├── suppressions.xml        # Checkstyle suppression specification
 │   └──
 └── ...
 ```
