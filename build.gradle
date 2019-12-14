@@ -99,3 +99,16 @@ task doc(type: Javadoc) {
         + "<a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'>"
         + "Creative Commons Attribution-ShareAlike 4.0 International License</a>.")
 }
+
+task checkstyle(type: Checkstyle, dependsOn: ['checkstyleMain', 'checkstyleTest']) {
+    group 'Verification'
+    description 'Generates reports from Checkstyle.'
+}
+
+tasks.withType(Checkstyle) {
+    ignoreFailures = true
+    reports {
+        xml.enabled false
+        html.enabled true
+    }
+}
