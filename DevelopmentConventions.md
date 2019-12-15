@@ -63,7 +63,7 @@ If a topic is not covered by any guides, use best judgement and consider opening
 ### Project-Specific Conventions
 
 - Multiple authors are indicated using multiple @author tags, one tag per line, one author per tag.
-- Where practicable, style conventions are embodied in configuration files for the [Checkstyle](https://checkstyle.sourceforge.io) tool.
+- Where practicable, style conventions are embodied in configuration files for the [Checkstyle](https://checkstyle.sourceforge.io) tool and located in the [config/checkstyle](config/checkstyle) directory.
 
 _____
 ## Build Environment
