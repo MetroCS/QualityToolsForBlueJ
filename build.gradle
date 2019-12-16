@@ -70,6 +70,17 @@ jar {
     }
 }
 
+/* Move development jar to production. */
+task dist(type: Copy) {
+     description 'Copy development jar to production.'
+     group 'Production'
+     dependsOn tasks.named("jar")
+     from ('build/libs')
+     into "${project.projectDir}"
+     rename '(.*).jar', 'QualityTools.jar'
+}
+
+
 javadoc {
      description 'Generates public API javadocs'
      options.addBooleanOption('author', true)
