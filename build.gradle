@@ -72,12 +72,13 @@ jar {
 
 /* Move development jar to production. */
 task dist(type: Copy) {
-     description 'Copy development jar to production.'
+     description 'Copy development jar to production (build if needed)'
      group 'Production'
      dependsOn tasks.named("jar")
      from ('build/libs')
      into "${project.projectDir}"
-     rename '(.*).jar', 'QualityTools.jar'
+     include 'QualityTools*.jar'
+     rename 'QualityTools(.*).jar', 'QualityTools.jar'
 }
 
 
