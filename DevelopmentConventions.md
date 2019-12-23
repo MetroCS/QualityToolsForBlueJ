@@ -2,10 +2,35 @@
 
 This document describes intended and preferred conventions
 for development and maintenance of the _Quality Tools for BlueJ_ software product.
+* [Contributing](#contributing)
 * [Agile Principles](#Agile-Principles)
 * [Coding Convention Guide](#Coding-Convention-Guide)
 * [Build Environment](#Build-Environment)
 * [Repository Structure](#Repository-Structure)
+
+_____
+## Contributing
+### New Issues
+- Review the [Project Board](../../projects/1) to verify that the issue has not already been integrated into the project.
+- Search the [Issues](../..issues) to determine related issues (epics, dependencies, not yet triaged, ...)
+- Create a new issue using the "New Issue" button on the [Issues](../..issues) page
+  - Choose an appropriate issue template (e.g., "Bug report", "User Story")
+  - Change the title of the issue
+  - Modify the body of the issue in accordance with the template
+
+### Changes
+This project follows this basic workflow on GitHub:
+- Fork the repository
+- Create a _feature branch_ in your fork
+- Follow the [Agile Principles](#agile-principles) outlined for the project (i.e., [working](#working-software), [incremental](#incremental-development), [behavior-driven](#behavior-driven-development), [test-dreiven](#test-driven-development))
+- Include supporting documentation as appropriate.
+- Before initiativng a pull request (PR):
+  - Verify quality and adherence to conventions.
+  - Build, run, and test a distribution build.
+- Submit a pull request (PR) from your branch.
+- One or more reviewers will review the request and may make comments in the PR conversation. 
+  - Participate in the conversation associated with the PR, updating your branch as appropriate.
+- After reviewer approval, someone with commit access will merge the PR.
 
 _____ 
 ## Agile Principles
@@ -68,7 +93,8 @@ If a topic is not covered by any guides, use best judgement and consider opening
 _____
 ## Build Environment
 
-The following tools are established as comprising and contributing to the build environment for the QT4BJ project. (✔ indicates already integrated into the build environment.)
+The following tools are established as comprising and contributing to the build environment for the QT4BJ project.  
+(✔ indicates already integrated into the build environment.)
 
 ### Build Automation
 #### ✔ [Gradle](https://www.gradle.org/)
