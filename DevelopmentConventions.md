@@ -100,29 +100,31 @@ The following tools are established as comprising and contributing to the build 
 
 ### Build Automation
 #### ✔ [Gradle](https://www.gradle.org/)
-Compromise between configuration and convention, uses a Groovy-based DSL instead of XML.
+Build-automation system using Groovy-based domain-specific language (DSL)
 
-### Unit Testing Framework
-#### ✔ [JUnit5](https://junit.org/junit5/)
-Framework for testing Java 8+. Supports multiple testing styles.
+### Quality Assessment
+#### Unit Testing Framework
+##### ✔ [JUnit5](https://junit.org/junit5/)
+Framework for unit-testing Java code
 
-### Test Coverage Assessment
-#### ✔ [JaCoCo](https://www.eclemma.org/jacoco/)
-Java code coverage library that can also analyze code complexity
-
-### Design Complexity Assessment
-#### ✔ [JaCoCo](https://www.eclemma.org/jacoco/)
-Java test coverage and code complexity analyzer
+#### Test Coverage Assessment
+##### ✔ [JaCoCo](https://www.eclemma.org/jacoco/)
+Determines code coverage of Java tests
  
-### Source Code Shortcoming Identification
-#### ✔ [CheckStyle](https://checkstyle.sourceforge.io/)
-Identifies violation of coding conventions
+#### Source Code Shortcoming Identification
+##### ✔ [CheckStyle](https://checkstyle.sourceforge.io/)
+Identifies violations of coding conventions
 
-#### [PMD](https://pmd.github.io/)
-Identifies common programming weaknesses 
+##### PMD1 [PMD](https://pmd.github.io/)
+Identifies common programming weaknesses
 
-#### [Spotbugs](https://spotbugs.github.io/)
+##### SpotBugs1 [SpotBugs](https://spotbugs.github.io/)
 Identifies bugs and potentially buggy code in Java code; a successor to FindBugs
+
+#### Design Complexity Assessment
+##### ✔ [JaCoCo](https://www.eclemma.org/jacoco/)
+Provides complexity analysis of Java source code
+
 _____
 _The following tools are under consideration for inclusion in the QT4BJ build environment._
 #### [Travis CI](https://travis-ci.com/)
