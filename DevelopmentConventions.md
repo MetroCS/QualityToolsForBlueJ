@@ -25,7 +25,7 @@ Here is the basic GitHub workflow for this project:
 - Create a _feature branch_ in your fork.
 - Follow the [Agile Principles](#agile-principles) outlined for the project (i.e., [working](#working-software), [incremental](#incremental-development), [behavior-driven](#behavior-driven-development), [test-dreiven](#test-driven-development)).
 - Include supporting documentation as appropriate.
-- Before initiativng a pull request (PR):
+- Before initiating a pull request (PR):
   - [Verify quality](#Quality-Assessment), including adherence to [conventions](#Coding-Convention-Guide).
   - Build, run, and test a distribution build.
 - Submit a pull request (PR) from your branch.
