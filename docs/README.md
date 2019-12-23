@@ -10,7 +10,10 @@ Development and maintenance of a single BlueJ extension that
 - provides a smooth path for the integration of additional quality assessment tools.
 
 ___
+Download Current Release: [QualityTools.jar](https://github.com/MetroCS/QualityToolsForBlueJ/releases/download/0.1.0/QualityTools.jar)
+
+___
 Project Repository: [https://github.com/MetroCS/QualityToolsForBlueJ](https://github.com/MetroCS/QualityToolsForBlueJ)
 
 ___
-Download Current Release: [QualityTools.jar](https://github.com/MetroCS/QualityToolsForBlueJ/releases/download/0.1.0/QualityTools.jar)
+How to Contribute: [Contributing](https://github.com/MetroCS/QualityToolsForBlueJ/blob/master/DevelopmentConventions.md#contributing)
