@@ -115,10 +115,10 @@ Determines code coverage of Java tests
 ##### ✔ [CheckStyle](https://checkstyle.sourceforge.io/)
 Identifies violations of coding conventions
 
-##### PMD1 [PMD](https://pmd.github.io/)
+##### ☐ [PMD](https://pmd.github.io/)
 Identifies common programming weaknesses
 
-##### SpotBugs1 [SpotBugs](https://spotbugs.github.io/)
+##### ☐ [SpotBugs](https://spotbugs.github.io/)
 Identifies bugs and potentially buggy code in Java code; a successor to FindBugs
 
 #### Design Complexity Assessment
