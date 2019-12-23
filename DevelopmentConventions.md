@@ -25,7 +25,7 @@ Here is the basic GitHub workflow for this project:
 - Follow the [Agile Principles](#agile-principles) outlined for the project (i.e., [working](#working-software), [incremental](#incremental-development), [behavior-driven](#behavior-driven-development), [test-dreiven](#test-driven-development)).
 - Include supporting documentation as appropriate.
 - Before initiativng a pull request (PR):
-  - Verify quality and adherence to conventions.
+  - [Verify quality](#Quality-Assessment), including adherence to [conventions](#Coding-Convention-Guide).
   - Build, run, and test a distribution build.
 - Submit a pull request (PR) from your branch.
 - One or more reviewers will review the request and may make comments in the PR conversation. 
