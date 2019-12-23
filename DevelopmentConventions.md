@@ -8,12 +8,13 @@ for development and maintenance of the _Quality Tools for BlueJ_ software produc
 * [Build Environment](#Build-Environment)
 * [Repository Structure](#Repository-Structure)
 
+
 _____
 ## Contributing
 ### New Issues
-- Review the [Project Board](../../projects/1) to verify that the issue has not already been integrated into the project.
+- Review the [Project Board](../../projects/1) to verify that the issue does not already appear as a project task.
 - Search the [Issues](../../issues) to determine related issues (epics, dependencies, not yet triaged, ...).
-- Create a new issue using the "New Issue" button on the [Issues](../../issues) page.
+- Create a new issue using the "**New Issue**" button on the [Issues](../../issues) page.
   - Choose an appropriate issue template (e.g., "Bug report", "User Story").
   - Change the title of the issue.
   - Modify the body of the issue in accordance with the template.
@@ -31,6 +32,7 @@ Here is the basic GitHub workflow for this project:
 - One or more reviewers will review the request and may make comments in the PR conversation. 
   - Participate in the conversation associated with the PR, updating your branch as appropriate.
 - After reviewer approval, someone with commit access will merge the PR.
+
 
 _____ 
 ## Agile Principles
@@ -67,6 +69,7 @@ in which automated tests are written prior to writing the implementation.
 Tests associated with successful implementation remains in the code base as _regression tests._
 
 (Note: Test coverage tools may facilitate _tracing forward_ from a test to code that the test is intended to verify.)
+
 
 _____
 ## Coding Convention Guide
@@ -133,6 +136,7 @@ Continuous integration
 Code coverage analysis
 #### [AccessLint](https://www.accesslint.com/)
 Automated web accessibility testing
+
 
 _____ 
 ## Repository Structure 
