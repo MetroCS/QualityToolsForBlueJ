@@ -12,17 +12,17 @@ _____
 ## Contributing
 ### New Issues
 - Review the [Project Board](../../projects/1) to verify that the issue has not already been integrated into the project.
-- Search the [Issues](../..issues) to determine related issues (epics, dependencies, not yet triaged, ...)
-- Create a new issue using the "New Issue" button on the [Issues](../..issues) page
-  - Choose an appropriate issue template (e.g., "Bug report", "User Story")
-  - Change the title of the issue
-  - Modify the body of the issue in accordance with the template
+- Search the [Issues](../../issues) to determine related issues (epics, dependencies, not yet triaged, ...).
+- Create a new issue using the "New Issue" button on the [Issues](../../issues) page.
+  - Choose an appropriate issue template (e.g., "Bug report", "User Story").
+  - Change the title of the issue.
+  - Modify the body of the issue in accordance with the template.
 
 ### Changes
-This project follows this basic workflow on GitHub:
-- Fork the repository
-- Create a _feature branch_ in your fork
-- Follow the [Agile Principles](#agile-principles) outlined for the project (i.e., [working](#working-software), [incremental](#incremental-development), [behavior-driven](#behavior-driven-development), [test-dreiven](#test-driven-development))
+Here is the basic GitHub workflow for this project:
+- Fork the repository.
+- Create a _feature branch_ in your fork.
+- Follow the [Agile Principles](#agile-principles) outlined for the project (i.e., [working](#working-software), [incremental](#incremental-development), [behavior-driven](#behavior-driven-development), [test-dreiven](#test-driven-development)).
 - Include supporting documentation as appropriate.
 - Before initiativng a pull request (PR):
   - Verify quality and adherence to conventions.
@@ -73,22 +73,24 @@ _____
 
 ### Style Convention Precedence and References
 
-#### [Project-specific conventions](/ConventionGuide.md#Project-Specific-Conventions) take precedence.
+* [Project-specific conventions](#Project-Specific-Conventions) take precedence.
 
-If no project-specific convention is applicable, use the [Sun Convention](https://www.oracle.com/technetwork/java/codeconvtoc-136057.html) guide.
+* If no project-specific convention is applicable, use the [Sun Convention](https://www.oracle.com/technetwork/java/codeconvtoc-136057.html) guide.
 
-If something is not covered in the project-specific or the Sun Convention guide, use the [Google Convention](https://google.github.io/styleguide/javaguide.html) guide.
+* If something is not covered in the project-specific or the Sun Convention guide, use the [Google Convention](https://google.github.io/styleguide/javaguide.html) guide.
 
-If a topic is not covered by any guides, use best judgement and consider opening a project issue to formalize the decision.
-
-- Sun Convention guide: https://www.oracle.com/technetwork/java/codeconvtoc-136057.html
-- Google Convention guide: https://google.github.io/styleguide/javaguide.html
-
+* If a topic is not covered by any guides, use best judgement and consider opening a project issue to formalize the decision.
 
 ### Project-Specific Conventions
-
+- Style conventions are embodied in configuration files for the [Checkstyle](https://checkstyle.sourceforge.io) tool and located in the [config/checkstyle](config/checkstyle) directory.
 - Multiple authors are indicated using multiple @author tags, one tag per line, one author per tag.
-- Where practicable, style conventions are embodied in configuration files for the [Checkstyle](https://checkstyle.sourceforge.io) tool and located in the [config/checkstyle](config/checkstyle) directory.
+
+### Sun Convention guide
+- https://www.oracle.com/technetwork/java/codeconvtoc-136057.html
+
+### Google Convention guide
+- https://google.github.io/styleguide/javaguide.html
+
 
 _____
 ## Build Environment
