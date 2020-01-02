@@ -11,6 +11,8 @@ for development and maintenance of the _Quality Tools for BlueJ_ software produc
 
 _____
 ## Contributing
+Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md]. By participating in this project you agree to abide by its terms.
+
 ### New Issues
 - Review the [Project Board](../../projects/1) to verify that the issue does not already appear as a project task.
 - Search the [Issues](../../issues) to determine related issues (epics, dependencies, not yet triaged, ...).
@@ -150,6 +152,7 @@ _____
 ├── gradle/        		# See Gradle documentation
 ├── src/                     	# Source files
 ├── .gitignore                  # Directories and file types to be ignored by git
+├── CODE_OF_CONDUCT.md	        # Contributor code of conduct
 ├── DevelopmentConventions.md	# Development and maintenance conventions
 ├── LICENSE                     # Open source license file
 ├── README.md
