@@ -7,9 +7,7 @@ Goal: BlueJ extension that integrates quality assessment tools
 ### [Vision & Stakeholders](Vision.md)
 #### [Quality Assessment Tools](toolsForIntegration.md)
 
-### Contributing
-
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code-of-conduct.md)
+### Contributing [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 
 #### [Development Conventions](DevelopmentConventions.md)
 
