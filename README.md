@@ -7,12 +7,15 @@ Goal: BlueJ extension that integrates quality assessment tools
 ### [Vision & Stakeholders](Vision.md)
 #### [Quality Assessment Tools](toolsForIntegration.md)
 
-#### [Previous Project Info](archive/RequirementsSourceInfo.md)
+### Contributing
 
-### [Development Conventions](DevelopmentConventions.md)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code-of-conduct.md)
 
-### [Project History Archive](archive)
-#### [Decision Rationales](archive/decisionNotes)
+#### [Development Conventions](DevelopmentConventions.md)
+
+#### [Project History Archive](archive)
+##### [Decision Rationales](archive/decisionNotes)
+##### [Previous Project Info](archive/RequirementsSourceInfo.md)
 
 ___
 
