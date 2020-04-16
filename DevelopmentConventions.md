@@ -25,7 +25,7 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 Here is the basic GitHub workflow for this project:
 - Fork the repository.
 - Create a _feature branch_ in your fork.
-- Follow the [Agile Principles](#agile-principles) outlined for the project (i.e., [working](#working-software), [incremental](#incremental-development), [behavior-driven](#behavior-driven-development), [test-dreiven](#test-driven-development)).
+- Follow the [Agile Principles](#agile-principles) outlined for the project (i.e., [working](#working-software), [incremental](#incremental-development), [behavior-driven](#behavior-driven-development), [test-driven](#test-driven-development)).
 - Include supporting documentation as appropriate.
 - Before initiating a pull request (PR):
   - [Verify quality](#Quality-Assessment), including adherence to [conventions](#Coding-Convention-Guide).
@@ -103,9 +103,13 @@ _____
 The following tools are established as comprising and contributing to the build environment for the QT4BJ project.  
 (✔ indicates already integrated into the build environment.)
 
+#### [JDK v11.x](https://adoptopenjdk.net/index.html?variant=openjdk11&jvmVariant=hotspot)
+BlueJ is deployed under JDK 11, so development should take place under the same Java environment
+
 ### Build Automation
 #### ✔ [Gradle](https://www.gradle.org/)
-Build-automation system using Groovy-based domain-specific language (DSL)
+Build-automation system using Groovy-based domain-specific language (DSL). 
+A Gradle wrapper class is included with the project, so just run `gradlew assemble` and `gradlew build` to get correct gradle installation and build settings
 
 ### Quality Assessment
 #### Unit Testing Framework
