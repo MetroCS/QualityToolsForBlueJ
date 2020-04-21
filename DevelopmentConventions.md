@@ -31,12 +31,12 @@ Here is the basic GitHub workflow for this project:
   - [Verify quality](#Quality-Assessment), including adherence to [conventions](#Coding-Convention-Guide).
   - Build, run, and test a distribution build.
 - Submit a pull request (PR) from your branch.
-- One or more reviewers will review the request and may make comments in the PR conversation. 
+- One or more reviewers will review the request and may make comments in the PR conversation.
   - Participate in the conversation associated with the PR, updating your branch as appropriate.
 - After reviewer approval, someone with commit access will merge the PR.
 
 
-_____ 
+_____
 ## Agile Principles
 
 ### Working Software
@@ -50,7 +50,7 @@ For example, no merge results in a non-buildable state or a buildable product th
 Architectural elements, tests, and implementation code match requirements associated with the current and previous versions of the product.
 
 For example, tests and code for features identified for future versions are excluded from the project code base.
- 
+
 ### Behavior-Driven Development
 #### All code is associated with an explicit requirement specification (User Story).
 
@@ -103,13 +103,9 @@ _____
 The following tools are established as comprising and contributing to the build environment for the QT4BJ project.  
 (✔ indicates already integrated into the build environment.)
 
-#### [JDK v11.x](https://adoptopenjdk.net/index.html?variant=openjdk11&jvmVariant=hotspot)
-BlueJ is deployed under JDK 11, so development should take place under the same Java environment
-
 ### Build Automation
 #### ✔ [Gradle](https://www.gradle.org/)
-Build-automation system using Groovy-based domain-specific language (DSL). 
-A Gradle wrapper class is included with the project, so just run `gradlew assemble` and `gradlew build` to get correct gradle installation and build settings
+Build-automation system using Groovy-based domain-specific language (DSL).
 
 ### Quality Assessment
 #### Unit Testing Framework
@@ -119,7 +115,7 @@ Framework for unit-testing Java code
 #### Test Coverage Assessment
 ##### ✔ [JaCoCo](https://www.eclemma.org/jacoco/)
 Determines code coverage of Java tests
- 
+
 #### Source Code Shortcoming Identification
 ##### ✔ [CheckStyle](https://checkstyle.sourceforge.io/)
 Identifies violations of coding conventions
@@ -144,8 +140,8 @@ Code coverage analysis
 Automated web accessibility testing
 
 
-_____ 
-## Repository Structure 
+_____
+## Repository Structure
 
 ```
 .
@@ -210,7 +206,7 @@ GitHub Pages Website
 
 .
 ├── ...
-├── docs                    # GitHub Pages website content	
+├── docs                    # GitHub Pages website content
 │   ├── README.md           # Project overview
 │   ├── _config.yml         # Jekyll configuration
 │   └── ...                 # etc.

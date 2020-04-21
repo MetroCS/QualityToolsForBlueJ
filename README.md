@@ -10,6 +10,7 @@ Goal: BlueJ extension that integrates quality assessment tools
 ### Contributing [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 
 #### [Development Conventions](DevelopmentConventions.md)
+#### [Build Information](BuildInformation.md)
 
 #### [Project History Archive](archive)
 ##### [Decision Rationales](archive/decisionNotes)
