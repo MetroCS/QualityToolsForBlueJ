@@ -8,6 +8,7 @@ plugins {
     id 'java-library'
     id 'jacoco'
     id 'checkstyle'
+    id 'com.github.spotbugs' version '4.0.2'
 }
 
 compileJava {
@@ -43,6 +44,9 @@ dependencies {
     // JUnit 5 = JUnit Platform + JUnit Jupiter
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.1.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.1.0'
+
+    //SpotBugs
+    spotbugsPlugins 'com.h3xstream.findsecbugs:findsecbugs-plugin:1.10.1'
 }
 
 // Configures JaCoCo version and where reports are stored
@@ -81,6 +85,23 @@ task dist(type: Copy) {
      rename 'QualityTools(.*).jar', 'QualityTools.jar'
 }
 
+spotbugs {
+	toolVersion = '4.0.2'
+	effort = 'max'
+	reportLevel = 'low'
+	reportsDir = file("$buildDir/reports/spotbugs")
+	ignoreFailures = true
+}
+
+spotbugsMain {
+	reports{
+		html{
+			enabled = true
+			destination = file ("$buildDir/reports/spotbugs/main.html")
+			stylesheet = 'fancy-hist.xsl'
+		}
+	}
+}
 
 javadoc {
      description 'Generates public API javadocs'
